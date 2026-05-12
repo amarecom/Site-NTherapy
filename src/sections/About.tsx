@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import AnimatedSection from '@/components/AnimatedSection';
 import './About.css';
 
@@ -7,9 +8,14 @@ const About = () => (
       <div className="about-grid">
         <AnimatedSection direction="left">
           <div className="about-visual">
-            <div className="profile-placeholder">
-              <span>Photo du thérapeute</span>
-            </div>
+            <Image
+              src="/photos/about-hero.jpg"
+              alt="N_Therapy — cabinet à Paris avec champion WBC"
+              width={600}
+              height={700}
+              className="about-photo"
+              priority
+            />
           </div>
         </AnimatedSection>
         <AnimatedSection direction="right">
@@ -29,6 +35,18 @@ const About = () => (
               <li>✅ Suivi sportif & récupération</li>
             </ul>
           </div>
+        </AnimatedSection>
+      </div>
+
+      <div className="cabinet-gallery">
+        <AnimatedSection delay={0.1}>
+          <Image src="/photos/cabinet-neon.jpg" alt="Cabinet N_Therapy ambiance" width={400} height={300} className="gallery-photo" />
+        </AnimatedSection>
+        <AnimatedSection delay={0.2}>
+          <Image src="/photos/cabinet-session.jpg" alt="Séance au cabinet N_Therapy" width={400} height={300} className="gallery-photo" />
+        </AnimatedSection>
+        <AnimatedSection delay={0.3}>
+          <Image src="/photos/cabinet-cupping.jpg" alt="Cupping therapy N_Therapy" width={400} height={300} className="gallery-photo" />
         </AnimatedSection>
       </div>
     </div>
