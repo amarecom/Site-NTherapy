@@ -1,0 +1,77 @@
+:root {
+  /* Palette de Couleurs */
+  --color-primary: #f0f7ff;      /* Bleu ciel très clair (Arrière-plan) */
+  --color-secondary: #2c3e50;    /* Bleu nuit (Texte et titres) */
+  --color-accent: #4a90e2;       /* Bleu médical (Éléments interactifs) */
+  --color-action: #27ae60;       /* Vert doux (CTA Réservation) */
+  --color-white: #ffffff;
+  --color-gray-light: #f8f9fa;
+  --color-text-muted: #6c757d;
+
+  /* Espacement */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Typographie */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-headings: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Utilitaires */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.section-padding {
+  padding: var(--spacing-lg) 0;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+  }
+}
