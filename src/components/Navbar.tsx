@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -8,14 +8,21 @@ import './Navbar.css';
 
 const links = [
   { to: '/', label: 'Accueil' },
-  { to: '/services', label: 'Services' },
-  { to: '/a-propos', label: 'À Propos' },
+  { to: '/voitures', label: 'Nos Voitures' },
+  { to: '/reservation', label: 'Réservation' },
   { to: '/contact', label: 'Contact' },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const isActive = (to: string) => {
     if (to === '/') return pathname === '/';
@@ -23,10 +30,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container navbar-content">
         <Link href="/" className="logo">
-          N_Therapy<span>.</span>
+          Soul<span>Cars</span>
         </Link>
 
         <ul className="nav-links">
@@ -39,7 +46,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <Link href="/reservation" className="btn btn-primary">Réserver</Link>
+        <Link href="/voitures" className="btn btn-primary nav-cta">Louer maintenant</Link>
 
         <button className="burger" onClick={() => setOpen(!open)} aria-label="Menu">
           <span className={open ? 'open' : ''} />
@@ -67,8 +74,8 @@ const Navbar = () => {
                 {label}
               </Link>
             ))}
-            <Link href="/reservation" className="btn btn-primary" onClick={() => setOpen(false)}>
-              Réserver
+            <Link href="/voitures" className="btn btn-primary" onClick={() => setOpen(false)}>
+              Louer maintenant
             </Link>
           </motion.div>
         )}

@@ -4,24 +4,24 @@ import Footer from '@/components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://n-therapy.fr'),
+  metadataBase: new URL('https://soulcars.fr'),
   title: {
-    default: 'N_Therapy — Cupping, Massage & Thérapie Manuelle à Paris',
-    template: '%s | N_Therapy',
+    default: 'SoulCars — Location de voitures premium',
+    template: '%s | SoulCars',
   },
   description:
-    'N_Therapy, spécialiste du cupping therapy, massage thérapeutique et thérapie manuelle à Paris. Réservez en ligne.',
+    'SoulCars, location de voitures premium et de prestige. Réservez en ligne en quelques clics, disponibilité en temps réel.',
   keywords: [
-    'cupping therapy Paris',
-    'massage thérapeutique Paris',
-    'thérapie manuelle Paris',
-    'cupping ventouses',
-    'N_Therapy',
+    'location voiture',
+    'location voiture prestige',
+    'location voiture premium',
+    'SoulCars',
+    'réservation voiture en ligne',
   ],
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'N_Therapy',
+    siteName: 'SoulCars',
     images: [{ url: '/og-image.jpg' }],
   },
   twitter: { card: 'summary_large_image' },
@@ -30,18 +30,11 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'HealthAndBeautyBusiness',
-  name: 'N_Therapy',
-  description: 'Cupping therapy, massage et thérapie manuelle à Paris',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Paris',
-    addressRegion: 'Île-de-France',
-    addressCountry: 'FR',
-  },
-  url: 'https://n-therapy.fr',
-  sameAs: ['https://www.instagram.com/n_therapy._'],
-  priceRange: '€€',
+  '@type': 'AutoRental',
+  name: 'SoulCars',
+  description: 'Location de voitures premium et de prestige',
+  url: 'https://soulcars.fr',
+  priceRange: '€€€',
 };
 
 export default function RootLayout({
@@ -55,7 +48,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap"
           rel="stylesheet"
         />
         <script
