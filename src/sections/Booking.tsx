@@ -55,41 +55,8 @@ const Booking: FC = () => {
           </p>
         </div>
 
-        <div className="booking-body">
-          <div className="booking-info">
-            <div className="info-card">
-              <div className="info-icon">🕐</div>
-              <div>
-                <h4>Durée</h4>
-                <p>Séance de 45 à 60 min</p>
-              </div>
-            </div>
-            <div className="info-card">
-              <div className="info-icon">📍</div>
-              <div>
-                <h4>Lieu</h4>
-                <p>Cabinet ou domicile</p>
-              </div>
-            </div>
-            <div className="info-card">
-              <div className="info-icon">✅</div>
-              <div>
-                <h4>Confirmation</h4>
-                <p>Par email sous 24h</p>
-              </div>
-            </div>
-            <div className="info-card">
-              <div className="info-icon">❌</div>
-              <div>
-                <h4>Annulation</h4>
-                <p>Libre jusqu'à 24h avant</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="calendar-wrapper">
-            <div id="cal-embed" style={{ width: '100%', minHeight: '700px' }} />
-          </div>
+        <div className="calendar-wrapper">
+          <div id="cal-embed" style={{ width: '100%', minHeight: '700px' }} />
         </div>
       </div>
     </section>

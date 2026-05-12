@@ -1,3 +1,7 @@
+.about {
+  background-color: var(--color-bg);
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -8,21 +12,22 @@
 .profile-placeholder {
   width: 100%;
   aspect-ratio: 1/1;
-  background-color: var(--color-accent);
-  border-radius: 20px;
+  background: linear-gradient(135deg, #2a1a4e 0%, #1a0f33 100%);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--color-text-muted);
   font-weight: 600;
   text-align: center;
   padding: 2rem;
-  opacity: 0.6;
 }
 
 .about-text h2 {
   font-size: 2.5rem;
   margin-bottom: var(--spacing-xs);
+  color: var(--color-text);
 }
 
 .about-text h2 span {
@@ -39,6 +44,7 @@
 .about-text p {
   margin-bottom: var(--spacing-sm);
   font-size: 1.1rem;
+  color: var(--color-text);
 }
 
 .expertise-list {
@@ -49,7 +55,7 @@
 
 .expertise-list li {
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-accent-light);
 }
 
 @media (max-width: 768px) {

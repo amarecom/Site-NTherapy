@@ -1,12 +1,22 @@
 :root {
-  /* Palette de Couleurs */
-  --color-primary: #f0f7ff;      /* Bleu ciel très clair (Arrière-plan) */
-  --color-secondary: #2c3e50;    /* Bleu nuit (Texte et titres) */
-  --color-accent: #4a90e2;       /* Bleu médical (Éléments interactifs) */
-  --color-action: #27ae60;       /* Vert doux (CTA Réservation) */
+  /* Palette de Couleurs - Thème Noir/Violet Premium */
+  --color-bg: #0a0a0f;
+  --color-surface: #111118;
+  --color-surface-2: #1a1a24;
+  --color-border: rgba(139, 92, 246, 0.15);
+  --color-accent: #8b5cf6;
+  --color-accent-light: #a78bfa;
+  --color-accent-glow: rgba(139, 92, 246, 0.25);
+  --color-text: #f0eeff;
+  --color-text-muted: #9090b0;
   --color-white: #ffffff;
-  --color-gray-light: #f8f9fa;
-  --color-text-muted: #6c757d;
+  --color-action: #7c3aed;
+
+  /* Border Radius */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-full: 999px;
 
   /* Espacement */
   --spacing-xs: 0.5rem;
@@ -28,8 +38,8 @@
 
 body {
   font-family: var(--font-main);
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headings);
   font-weight: 700;
   line-height: 1.2;
+  color: var(--color-text);
 }
 
 a {
@@ -73,5 +84,9 @@ button {
   :root {
     --spacing-lg: 3rem;
     --spacing-xl: 5rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
   }
 }

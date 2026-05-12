@@ -1,5 +1,5 @@
 .testimonials {
-  background-color: var(--color-primary);
+  background-color: var(--color-surface);
 }
 
 .testimonials-grid {
@@ -9,18 +9,23 @@
 }
 
 .testimonial-card {
-  background-color: var(--color-white);
+  background-color: var(--color-surface-2);
   padding: var(--spacing-md);
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 4px 24px var(--color-accent-glow);
 }
 
 .testimonial-text {
   font-style: italic;
-  color: var(--color-secondary);
+  color: var(--color-text);
   margin-bottom: var(--spacing-sm);
   font-size: 1.05rem;
 }
@@ -29,8 +34,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--color-gray-light);
+  border-top: 1px solid var(--color-border);
   padding-top: var(--spacing-sm);
+}
+
+.testimonial-footer span {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
 }
 
 .stars {

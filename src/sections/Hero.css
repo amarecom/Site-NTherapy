@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  background: linear-gradient(160deg, var(--color-bg) 0%, #0e0818 100%);
 }
 
 .hero-content {
@@ -15,7 +16,7 @@
 .hero-text h1 {
   font-size: 3.5rem;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-secondary);
+  color: var(--color-white);
 }
 
 .hero-text h1 span {
@@ -37,20 +38,27 @@
 .btn-action {
   background-color: var(--color-action);
   color: var(--color-white);
-  padding: 0.8rem 1.5rem;
-  font-size: 1.1rem;
+  padding: 0.85rem 2rem;
+  font-size: 1.05rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-action:hover {
-  background-color: #219150;
+  background-color: var(--color-accent);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--color-accent-glow);
 }
 
 .btn-outline {
   border: 2px solid var(--color-accent);
-  color: var(--color-accent);
-  padding: 0.8rem 1.5rem;
-  font-size: 1.1rem;
+  color: var(--color-accent-light);
+  padding: 0.85rem 2rem;
+  font-size: 1.05rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
@@ -69,10 +77,11 @@
 .abstract-shape {
   width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, var(--color-accent) 0%, #a2c2e8 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   animation: blob 10s infinite alternate;
-  opacity: 0.8;
+  opacity: 0.35;
+  filter: blur(8px);
 }
 
 @keyframes blob {
@@ -98,11 +107,12 @@
 
   .hero-actions {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .abstract-shape {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin-top: var(--spacing-md);
   }
 }

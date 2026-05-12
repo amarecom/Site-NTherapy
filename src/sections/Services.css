@@ -1,5 +1,5 @@
 .services {
-  background-color: var(--color-gray-light);
+  background-color: var(--color-surface);
 }
 
 .section-header {
@@ -10,6 +10,7 @@
 .section-header h2 {
   font-size: 2.5rem;
   margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
 }
 
 .section-header h2 span {
@@ -28,16 +29,17 @@
 }
 
 .service-card {
-  background-color: var(--color-white);
+  background-color: var(--color-surface-2);
   padding: var(--spacing-md);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(74, 144, 226, 0.1);
+  box-shadow: 0 8px 32px var(--color-accent-glow);
+  border-color: rgba(139, 92, 246, 0.35);
 }
 
 .service-icon {
@@ -47,7 +49,7 @@
 
 .service-card h3 {
   margin-bottom: var(--spacing-xs);
-  color: var(--color-secondary);
+  color: var(--color-accent-light);
 }
 
 .service-card p {
