@@ -22,8 +22,8 @@ function App() {
       <footer style={{backgroundColor: 'var(--color-surface)', color: 'var(--color-text)', padding: '4rem 0', borderTop: '1px solid var(--color-border)'}}>
         <div className="container" style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem'}}>
           <div style={{maxWidth: '300px'}}>
-            <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-white)'}}>NTherapy<span style={{color: 'var(--color-accent)'}}>.</span></h3>
-            <p style={{color: 'var(--color-text-muted)'}}>Ostéopathie exclusive pour tous les âges. Redonnez à votre corps sa capacité d'auto-guérison.</p>
+            <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-white)'}}>N_Therapy<span style={{color: 'var(--color-accent)'}}>.</span></h3>
+            <p style={{color: 'var(--color-text-muted)'}}>Cupping therapy, massage et thérapie manuelle à Paris. Prenez soin de vous.</p>
           </div>
           <div>
             <h4 style={{marginBottom: '1rem', color: 'var(--color-text)'}}>Navigation</h4>

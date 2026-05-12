@@ -11,22 +11,20 @@ const Contact: FC = () => {
       <div className="contact-grid">
         <div className="contact-info">
           <div className="info-item">
-            <h4>📍 Adresse</h4>
-            <p>123 Rue de la Santé, 75000 Paris</p>
+            <h4>📍 Localisation</h4>
+            <p>Paris, Île-de-France</p>
           </div>
           <div className="info-item">
-            <h4>📞 Téléphone</h4>
-            <p>01 23 45 67 89</p>
+            <h4>📱 Instagram</h4>
+            <p><a href="https://www.instagram.com/n_therapy._" target="_blank" rel="noreferrer" style={{color: 'var(--color-accent-light)'}}>@n_therapy._</a></p>
           </div>
           <div className="info-item">
-            <h4>⏰ Horaires</h4>
-            <p>Lundi - Vendredi : 08:00 - 20:00</p>
-            <p>Samedi : 09:00 - 13:00</p>
+            <h4>📅 Réservation</h4>
+            <p>Via le calendrier en ligne — confirmation sous 24h</p>
           </div>
           <div className="info-item">
-            <h4>🚆 Accès</h4>
-            <p>Métro Ligne 4 - Station Alésia</p>
-            <p>Bus 62, 38</p>
+            <h4>💆 Spécialités</h4>
+            <p>Cupping Therapy · Massage · Thérapie Manuelle</p>
           </div>
         </div>
         <div className="contact-map">

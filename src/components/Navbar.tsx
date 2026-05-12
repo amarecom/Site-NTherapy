@@ -6,7 +6,7 @@ const Navbar: FC = () => {
     <nav className="navbar">
       <div className="container navbar-content">
         <div className="logo">
-          NTherapy<span>.</span>
+          N_Therapy<span>.</span>
         </div>
         <ul className="nav-links">
           <li><a href="#home">Accueil</a></li>

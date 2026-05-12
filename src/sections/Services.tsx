@@ -9,24 +9,24 @@ interface Service {
 
 const services: Service[] = [
   {
-    title: "Ostéopathie Générale",
-    description: "Traitement des troubles musculo-squelettiques, maux de dos et articulations.",
-    icon: "🦴"
+    title: "Cupping Therapy",
+    description: "Technique ancestrale par ventouses pour libérer les tensions musculaires, améliorer la circulation et accélérer la récupération.",
+    icon: "🫧"
   },
   {
-    title: "Ostéopathie du Sport",
-    description: "Optimisation des performances et récupération après blessure.",
+    title: "Massage Thérapeutique",
+    description: "Massages ciblés pour soulager les douleurs chroniques, réduire le stress et restaurer la mobilité.",
+    icon: "🤲"
+  },
+  {
+    title: "Thérapie Manuelle",
+    description: "Techniques manuelles précises pour traiter les dysfonctions articulaires, musculaires et tissulaires.",
+    icon: "💆"
+  },
+  {
+    title: "Récupération Sportive",
+    description: "Accompagnement des sportifs pour optimiser les performances et accélérer la récupération après effort.",
     icon: "🏃"
-  },
-  {
-    title: "Pédiatrie & Nourrissons",
-    description: "Soins doux pour accompagner la croissance et le bien-être des plus petits.",
-    icon: "👶"
-  },
-  {
-    title: "Femmes Enceintes",
-    description: "Accompagnement tout au long de la grossesse pour soulager les tensions.",
-    icon: "🤰"
   }
 ];
 
@@ -36,7 +36,7 @@ const Services: FC = () => {
       <div className="container">
         <div className="section-header">
           <h2>Nos Services<span>.</span></h2>
-          <p>Une approche thérapeutique adaptée à chaque étape de votre vie.</p>
+          <p>Cupping therapy, massage et thérapie manuelle — des soins sur-mesure à Paris.</p>
         </div>
         <div className="services-grid">
           {services.map((service, index) => (

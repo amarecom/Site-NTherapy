@@ -6,9 +6,9 @@ const Hero: FC = () => {
     <section id="home" className="hero">
       <div className="container hero-content">
         <div className="hero-text">
-          <h1>Retrouvez votre équilibre avec l'Ostéopathie<span>.</span></h1>
+          <h1>Cupping, Massage & Thérapie Manuelle à Paris<span>.</span></h1>
           <p>
-            Soins personnalisés et approche humaine pour soulager vos douleurs et améliorer votre bien-être au quotidien.
+            Soulagez vos douleurs et retrouvez votre bien-être grâce à des soins personnalisés au cœur de Paris, Île-de-France.
           </p>
           <div className="hero-actions">
             <a href="#booking" className="btn btn-action">Prendre Rendez-vous</a>
