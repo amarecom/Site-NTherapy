@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import AnimatedSection from '../components/AnimatedSection';
 import './Services.css';
 
 interface Service {
@@ -30,26 +30,28 @@ const services: Service[] = [
   }
 ];
 
-const Services: FC = () => {
-  return (
-    <section id="services" className="services section-padding">
-      <div className="container">
+const Services = () => (
+  <section id="services" className="services section-padding">
+    <div className="container">
+      <AnimatedSection>
         <div className="section-header">
           <h2>Nos Services<span>.</span></h2>
           <p>Cupping therapy, massage et thérapie manuelle — des soins sur-mesure à Paris.</p>
         </div>
-        <div className="services-grid">
-          {services.map((service, index) => (
-            <div key={index} className="service-card">
+      </AnimatedSection>
+      <div className="services-grid">
+        {services.map((service, index) => (
+          <AnimatedSection key={index} delay={index * 0.1} direction="up">
+            <div className="service-card">
               <div className="service-icon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>
-          ))}
-        </div>
+          </AnimatedSection>
+        ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Services;
