@@ -1,5 +1,9 @@
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
+import Services from './sections/Services';
+import About from './sections/About';
+import Testimonials from './sections/Testimonials';
+import Contact from './sections/Contact';
 import './App.css';
 
 function App() {
@@ -8,37 +12,36 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        {/* Les autres sections seront ajoutées ici */}
-        <section id="services" className="section-padding container" style={{textAlign: 'center'}}>
-          <h2>Nos Services</h2>
-          <p style={{marginTop: '1rem', color: 'var(--color-text-muted)'}}>Découvrez comment nous pouvons vous aider à retrouver votre mobilité.</p>
-          <div style={{marginTop: '3rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem'}}>
-            <div className="service-card">
-              <h3>Ostéopathie Générale</h3>
-              <p>Soulagement des douleurs articulaires et musculaires.</p>
-            </div>
-            <div className="service-card">
-              <h3>Ostéopathie du Sport</h3>
-              <p>Accompagnement et récupération pour les sportifs.</p>
-            </div>
-            <div className="service-card">
-              <h3>Pédiatrie</h3>
-              <p>Soins doux pour les nourrissons et les enfants.</p>
-            </div>
-          </div>
-        </section>
+        <Services />
+        <About />
+        <Testimonials />
+        <Contact />
       </main>
-      <footer style={{backgroundColor: 'var(--color-secondary)', color: 'white', padding: '3rem 0', marginTop: '4rem'}}>
+      <footer style={{backgroundColor: 'var(--color-secondary)', color: 'white', padding: '4rem 0'}}>
         <div className="container" style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem'}}>
-          <div>
-            <h3>NTherapy.</h3>
-            <p style={{opacity: 0.7, marginTop: '1rem'}}>Votre partenaire santé au quotidien.</p>
+          <div style={{maxWidth: '300px'}}>
+            <h3 style={{fontSize: '1.5rem', marginBottom: '1rem'}}>NTherapy<span>.</span></h3>
+            <p style={{opacity: 0.7}}>Ostéopathie exclusive pour tous les âges. Redonnez à votre corps sa capacité d'auto-guérison.</p>
           </div>
           <div>
-            <h4>Contact</h4>
-            <p style={{opacity: 0.7, marginTop: '1rem'}}>123 Rue de la Santé, Paris</p>
-            <p style={{opacity: 0.7}}>01 23 45 67 89</p>
+            <h4 style={{marginBottom: '1rem'}}>Navigation</h4>
+            <ul style={{display: 'grid', gap: '0.5rem', opacity: 0.7}}>
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">À Propos</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
+          <div>
+            <h4 style={{marginBottom: '1rem'}}>Légal</h4>
+            <ul style={{display: 'grid', gap: '0.5rem', opacity: 0.7}}>
+              <li>Mentions Légales</li>
+              <li>Politique de Confidentialité</li>
+            </ul>
+          </div>
+        </div>
+        <div className="container" style={{marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', opacity: 0.5, fontSize: '0.9rem'}}>
+          &copy; {new Date().getFullYear()} NTherapy - Tous droits réservés.
         </div>
       </footer>
     </div>
