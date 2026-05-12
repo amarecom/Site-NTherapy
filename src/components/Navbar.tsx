@@ -12,6 +12,7 @@ const Navbar: FC = () => {
           <li><a href="#home">Accueil</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#about">À Propos</a></li>
+          <li><a href="#booking">Réservation</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="#booking" className="btn btn-primary">Réserver</a>

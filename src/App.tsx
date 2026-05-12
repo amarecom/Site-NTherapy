@@ -3,6 +3,7 @@ import Hero from './sections/Hero';
 import Services from './sections/Services';
 import About from './sections/About';
 import Testimonials from './sections/Testimonials';
+import Booking from './sections/Booking';
 import Contact from './sections/Contact';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
         <Services />
         <About />
         <Testimonials />
+        <Booking />
         <Contact />
       </main>
       <footer style={{backgroundColor: 'var(--color-secondary)', color: 'white', padding: '4rem 0'}}>
@@ -29,6 +31,7 @@ function App() {
               <li><a href="#home">Accueil</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#about">À Propos</a></li>
+              <li><a href="#booking">Réservation</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
