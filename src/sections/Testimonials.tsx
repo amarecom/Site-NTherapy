@@ -1,4 +1,4 @@
-import AnimatedSection from '../components/AnimatedSection';
+import AnimatedSection from '@/components/AnimatedSection';
 import './Testimonials.css';
 
 const testimonials = [
@@ -32,7 +32,7 @@ const Testimonials = () => (
         {testimonials.map((t, i) => (
           <AnimatedSection key={i} delay={i * 0.12} direction="up">
             <div className="testimonial-card">
-              <p className="testimonial-text">"{t.text}"</p>
+              <p className="testimonial-text">&ldquo;{t.text}&rdquo;</p>
               <div className="testimonial-footer">
                 <strong>{t.name}</strong>
                 <div className="stars">{"★".repeat(t.rating)}</div>

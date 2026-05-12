@@ -1,5 +1,8 @@
+'use client';
+
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
 
@@ -12,25 +15,31 @@ const links = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (to: string) => {
+    if (to === '/') return pathname === '/';
+    return pathname.startsWith(to);
+  };
 
   return (
     <nav className="navbar">
       <div className="container navbar-content">
-        <NavLink to="/" className="logo">
+        <Link href="/" className="logo">
           N_Therapy<span>.</span>
-        </NavLink>
+        </Link>
 
         <ul className="nav-links">
           {links.map(({ to, label }) => (
             <li key={to}>
-              <NavLink to={to} className={({ isActive }) => isActive ? 'active' : ''} end={to === '/'}>
+              <Link href={to} className={isActive(to) ? 'active' : ''}>
                 {label}
-              </NavLink>
+              </Link>
             </li>
           ))}
         </ul>
 
-        <NavLink to="/reservation" className="btn btn-primary">Réserver</NavLink>
+        <Link href="/reservation" className="btn btn-primary">Réserver</Link>
 
         <button className="burger" onClick={() => setOpen(!open)} aria-label="Menu">
           <span className={open ? 'open' : ''} />
@@ -49,13 +58,18 @@ const Navbar = () => {
             transition={{ duration: 0.2 }}
           >
             {links.map(({ to, label }) => (
-              <NavLink key={to} to={to} onClick={() => setOpen(false)} end={to === '/'}>
+              <Link
+                key={to}
+                href={to}
+                className={isActive(to) ? 'active' : ''}
+                onClick={() => setOpen(false)}
+              >
                 {label}
-              </NavLink>
+              </Link>
             ))}
-            <NavLink to="/reservation" className="btn btn-primary" onClick={() => setOpen(false)}>
+            <Link href="/reservation" className="btn btn-primary" onClick={() => setOpen(false)}>
               Réserver
-            </NavLink>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

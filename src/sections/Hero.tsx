@@ -1,4 +1,7 @@
+'use client';
+
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './Hero.css';
 
 const Hero = () => (
@@ -25,8 +28,8 @@ const Hero = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          <a href="/reservation" className="btn btn-action">Prendre Rendez-vous</a>
-          <a href="/services" className="btn btn-outline">Nos Services</a>
+          <Link href="/reservation" className="btn btn-action">Prendre Rendez-vous</Link>
+          <Link href="/services" className="btn btn-outline">Nos Services</Link>
         </motion.div>
       </div>
       <motion.div

@@ -1,4 +1,4 @@
-import AnimatedSection from '../components/AnimatedSection';
+import AnimatedSection from '@/components/AnimatedSection';
 import './About.css';
 
 const About = () => (
@@ -17,7 +17,7 @@ const About = () => (
             <h2>À propos de N_Therapy<span>.</span></h2>
             <h3>Thérapeute Manuel — Paris, Île-de-France</h3>
             <p>
-              Spécialisé en cupping therapy, massage et thérapie manuelle, j'accompagne chaque patient avec une approche personnalisée et bienveillante au cœur de Paris.
+              Spécialisé en cupping therapy, massage et thérapie manuelle, j&apos;accompagne chaque patient avec une approche personnalisée et bienveillante au cœur de Paris.
             </p>
             <p>
               Mon objectif : identifier la source de vos douleurs et vous proposer des soins adaptés pour retrouver confort, mobilité et bien-être durablement — que vous soyez sportif, actif ou en rééducation.

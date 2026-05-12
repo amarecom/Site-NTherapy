@@ -1,3 +1,6 @@
+'use client';
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, type FC } from 'react';
 import './Booking.css';
 
