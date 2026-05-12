@@ -14,25 +14,25 @@ const services: Service[] = [
     title: "Cupping Therapy",
     description: "Technique ancestrale par ventouses pour libérer les tensions musculaires, améliorer la circulation et accélérer la récupération.",
     icon: "🫧",
-    photo: "/photos/cabinet-cupping.jpg"
+    photo: "/photos/service-cupping.jpg"
   },
   {
     title: "Massage Thérapeutique",
     description: "Massages ciblés pour soulager les douleurs chroniques, réduire le stress et restaurer la mobilité.",
     icon: "🤲",
-    photo: "/photos/cabinet-session.jpg"
+    photo: "/photos/service-massage.jpg"
   },
   {
     title: "Thérapie Manuelle",
     description: "Techniques manuelles précises pour traiter les dysfonctions articulaires, musculaires et tissulaires.",
     icon: "💆",
-    photo: "/photos/cabinet-tools.jpg"
+    photo: "/photos/service-manuel.jpg"
   },
   {
     title: "Récupération Sportive",
     description: "Accompagnement des sportifs pour optimiser les performances et accélérer la récupération après effort.",
     icon: "🏃",
-    photo: "/photos/sport-mozane.jpg"
+    photo: "/photos/service-sport.jpg"
   }
 ];
 

@@ -7,28 +7,28 @@ const testimonials = [
     name: "Jkitoubilel",
     role: "Champion WBC",
     text: "J'me suis endormi carrément tellement c'était relaxant. Soins au top, je recommande.",
-    photo: "/photos/sport-wbc.jpg",
+    photo: "/photos/testi-wbc.jpg",
     rating: 5
   },
   {
     name: "Mozane Malivert",
     role: "Combattant MMA",
     text: "Séance top avant le combat. Objectif relâchement musculaire et élimination des toxines — mission accomplie.",
-    photo: "/photos/sport-combat.jpg",
+    photo: "/photos/testi-combat.jpg",
     rating: 5
   },
   {
     name: "Wesley Jobello",
     role: "Footballeur professionnel",
     text: "Ce fut un plaisir, soins de qualité. Je reviendrai sans hésiter.",
-    photo: "/photos/cabinet-neon.jpg",
+    photo: "/photos/testi-wesley.jpg",
     rating: 5
   },
   {
     name: "Montanna Flo",
     role: "Athlète de compétition",
     text: "Passé au cabinet pour préparer ma compétition. Douleurs adducteurs, psoas, bassin traités avec précision. Merci !",
-    photo: "/photos/sport-comp.jpg",
+    photo: "/photos/testi-montanna.jpg",
     rating: 5
   }
 ];

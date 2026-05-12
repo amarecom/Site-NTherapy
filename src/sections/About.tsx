@@ -40,13 +40,13 @@ const About = () => (
 
       <div className="cabinet-gallery">
         <AnimatedSection delay={0.1}>
-          <Image src="/photos/cabinet-neon.jpg" alt="Cabinet N_Therapy ambiance" width={400} height={300} className="gallery-photo" />
+          <Image src="/photos/cabinet-neon.jpg" alt="Cabinet N_Therapy ambiance" width={900} height={900} className="gallery-photo" />
         </AnimatedSection>
         <AnimatedSection delay={0.2}>
-          <Image src="/photos/cabinet-session.jpg" alt="Séance au cabinet N_Therapy" width={400} height={300} className="gallery-photo" />
+          <Image src="/photos/cabinet-session.jpg" alt="Séance au cabinet N_Therapy" width={900} height={900} className="gallery-photo" />
         </AnimatedSection>
         <AnimatedSection delay={0.3}>
-          <Image src="/photos/cabinet-cupping.jpg" alt="Cupping therapy N_Therapy" width={400} height={300} className="gallery-photo" />
+          <Image src="/photos/cabinet-cupping.jpg" alt="Cupping therapy N_Therapy" width={900} height={900} className="gallery-photo" />
         </AnimatedSection>
       </div>
     </div>
