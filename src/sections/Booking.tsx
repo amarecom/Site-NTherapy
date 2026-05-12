@@ -1,7 +1,23 @@
-import type { FC } from 'react';
+import { useEffect, type FC } from 'react';
 import './Booking.css';
 
 const Booking: FC = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://app.cal.com/embed/embed.js';
+    script.async = true;
+    script.onload = () => {
+      (window as any).Cal?.('init', { origin: 'https://app.cal.com' });
+      (window as any).Cal?.('inline', {
+        elementOrSelector: '#cal-embed',
+        calLink: 'n.therapy',
+        layout: 'month_view',
+      });
+    };
+    document.body.appendChild(script);
+    return () => { document.body.removeChild(script); };
+  }, []);
+
   return (
     <section id="booking" className="booking section-padding">
       <div className="container">
@@ -46,13 +62,7 @@ const Booking: FC = () => {
           </div>
 
           <div className="calendar-wrapper">
-            <iframe
-              src="https://cal.com/n.therapy?embed=true"
-              frameBorder="0"
-              width="100%"
-              height="700"
-              title="Calendrier de réservation NTherapy"
-            />
+            <div id="cal-embed" style={{ width: '100%', minHeight: '700px' }} />
           </div>
         </div>
       </div>
