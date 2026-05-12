@@ -46,43 +46,13 @@ const Booking: FC = () => {
           </div>
 
           <div className="calendar-wrapper">
-            <div className="calendar-placeholder">
-              <div className="calendar-placeholder-inner">
-                <div className="cal-icon">📅</div>
-                <h3>Calendrier de réservation</h3>
-                <p>
-                  Pour activer votre calendrier, créez un compte gratuit sur{' '}
-                  <a href="https://cal.com" target="_blank" rel="noreferrer">
-                    cal.com
-                  </a>{' '}
-                  puis remplacez <code>votre-identifiant</code> dans le code
-                  par votre nom d'utilisateur Cal.com.
-                </p>
-                <a
-                  href="https://cal.com/signup"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-cal"
-                >
-                  Créer mon compte Cal.com gratuitement →
-                </a>
-              </div>
-            </div>
-
-            {/*
-              Une fois votre compte Cal.com créé :
-              1. Remplacez la div "calendar-placeholder" ci-dessus par :
-
-              <iframe
-                src="https://cal.com/VOTRE-IDENTIFIANT?embed=true"
-                frameBorder="0"
-                width="100%"
-                height="700"
-                title="Calendrier de réservation NTherapy"
-              />
-
-              2. Remplacez VOTRE-IDENTIFIANT par votre username Cal.com
-            */}
+            <iframe
+              src="https://cal.com/n.therapy?embed=true"
+              frameBorder="0"
+              width="100%"
+              height="700"
+              title="Calendrier de réservation NTherapy"
+            />
           </div>
         </div>
       </div>
